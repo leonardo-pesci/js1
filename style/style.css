@@ -37,10 +37,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    gap: 10px;
 }
 
 #buttonContainer button{
     color: black;
     background-color: orange;
     padding: 6px 12px;
+    border-radius: 14px;
 }
