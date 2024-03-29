@@ -1,0 +1,18 @@
+#container{
+    width: 500px;
+    height: 500px;
+    background-color: #cc8f8f6c;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+#block{
+    width: 100px;
+    height: 100px;
+    background: #3e9696;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
