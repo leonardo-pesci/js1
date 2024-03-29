@@ -1,3 +1,14 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color-primary: #3e9696;
+    --color-bg: #cc8f8f6c;
+}
+
 #screen{
     position: absolute;
     top: 50vh;
@@ -15,7 +26,7 @@
 #block{
     width: 100px;
     height: 100px;
-    background: #3e9696;
+    background: var(--color-primary);
     position: absolute;
     top: 0;
     left: 0;
@@ -25,8 +36,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 #buttonContainer button{
-    
+    color: black;
+    background-color: orange;
+    padding: 6px 12px;
 }
