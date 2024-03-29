@@ -1,11 +1,15 @@
-#container{
-    width: 450px;
-    height: 450px;
-    background-color: #cc8f8f6c;
+#screen{
     position: absolute;
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
+}
+
+#container{
+    width: 450px;
+    height: 450px;
+    background-color: #cc8f8f6c;
+    position: relative;
 }
 
 #block{
@@ -15,4 +19,14 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+#buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonContainer button{
+    
 }
