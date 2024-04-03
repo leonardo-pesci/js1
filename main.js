@@ -1,23 +1,26 @@
-console.log('hello world!')
+let container = document.querySelector('#container')
+console.log(container)
 
-function left(){
-    let block = document.querySelector("#block");
+// function left(){
+//     let block = document.querySelector("#block");
 
-    block.style.left = 0;
-}
+//     block.style.left = 0;
+// }
 
-function right(){
-    let block = document.querySelector("#block");
+// function right(){
+//     let block = document.querySelector("#block");
 
-    block.style.left = "350px";
-}
+//     block.style.left = "350px";
+// }
 
 function createBlock(blockNumber){
     for (let i = 0; i < blockNumber; i++){
         let block = document.createElement("div")
 
-        block.id = "block" + (i + 1)
-        block.class = 
+        console.log(block)
+        block.id = 'block' + (i + 1)
+        block.className = 'block'
+
         container.appendChild(block)
     }
 }

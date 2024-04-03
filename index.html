@@ -15,30 +15,28 @@
         <!-- Info -->
         <title>Blocco</title>
 
-        <!-- Script -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="main.js"></script>
-
     </head>
     <body>
         <div id="screen">
 
             <div id="container">
-                <div class="block"></div>
             </div>
 
             <div id="buttonContainer">
                 <!-- <button class="btn btn-primary" onclick="left()">left</button>
                 <button class="btn btn-primary" onclick="right()">right</button> -->
-                <select id="numberSelect" class="form-select btn" aria-label="Default select">
+                <select id="numberSelect" class="form-select btn btn-primary" aria-label="Default select">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                   </select>
-                <button onclick=createBlock(numberSelect.value) class="btn btn-primary"></button>
+                <button onclick=createBlock(numberSelect.value) class="btn btn-primary">Create</button>
             </div>
         </div>
         
 
+        <!-- Script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
     </body>
 </html>
