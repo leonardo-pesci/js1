@@ -23,13 +23,15 @@
     position: relative;
 }
 
-#block{
+.block{
     width: 100px;
     height: 100px;
     background: var(--color-primary);
     position: absolute;
     top: 0;
     left: 0;
+    margin: 5px;
+    border-radius: 20px;
 }
 
 #buttonContainer{
@@ -40,7 +42,7 @@
     gap: 10px;
 }
 
-#buttonContainer button{
+#buttonContainer .btn{
     color: black;
     background-color: orange;
     padding: 6px 12px;

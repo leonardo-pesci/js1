@@ -24,12 +24,18 @@
         <div id="screen">
 
             <div id="container">
-                <div id="block"></div>
+                <div class="block"></div>
             </div>
 
             <div id="buttonContainer">
-                <button class="btn btn-primary" onclick="left()">left</button>
-                <button class="btn btn-primary" onclick="right()">right</button>
+                <!-- <button class="btn btn-primary" onclick="left()">left</button>
+                <button class="btn btn-primary" onclick="right()">right</button> -->
+                <select id="numberSelect" class="form-select btn" aria-label="Default select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                <button onclick=createBlock(numberSelect.value) class="btn btn-primary"></button>
             </div>
         </div>
         
