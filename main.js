@@ -1,4 +1,5 @@
-let container = document.querySelector('#container')
+const container = document.querySelector('#container')
+const createBtn = document.querySelector('#createBtn')
 
 // function left(){
 //     let block = document.querySelector("#block");
@@ -13,6 +14,13 @@ let container = document.querySelector('#container')
 // }
 let colors = ['#3e9696', '#ffea66', '#66d7f0', '#c184ee', '#ba6b47',]
 function createBlock(blockNumber){
+    if (parseInt(container.childElementCount) + parseInt(blockNumber) >= 16){
+
+        createBtn.disabled = true
+
+        blockNumber = 16 - container.childElementCount
+    }
+
     for (let i = 0; i < blockNumber; i++){
         let block = document.createElement("div")
 
@@ -28,4 +36,5 @@ function createBlock(blockNumber){
 
 function erase(){
     container.innerHTML = ''
+    createBtn.disabled = false
 }
